@@ -1,0 +1,132 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Arial";
+  }
+  
+  header {
+    justify-items: center;
+  }
+  .CorpoDSM {
+    align-items: center;
+    margin-left: 400px;
+    padding-right: 100px; /* ESSA*/
+    text-align: end;
+    display: flex;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  
+  img {
+    padding: 0px;
+    height: 120px 140px;
+  }
+  
+  .container {
+    background-color: #fff;
+    flex: 1;
+    margin: 0px 400px;
+    padding: 30px 60px;
+  }
+  
+  .container > h2 {
+    text-align: center;
+  }
+  
+  .risco2 {
+    height: 37px;
+    background-color: #8e0ee7;
+    width: 100vw;
+    margin-top: -32px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid;
+  }
+  
+  .table th {
+    background-color: #8e0ee7;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  table > tbody {
+    background-color: #fff;
+  }
+  
+  .dias {
+    font-weight: bold;
+  }
+  
+  .table td {
+    padding: 25px 25px;
+  }
+  
+  .button {
+    width: 100%;
+    text-align: right;
+    margin-top: -120px;
+  }
+  /* button:active {
+    border: 0px;
+    background-color: #ac6cda;
+    font-size: 20px;
+    color: #fff;
+  } */
+  .Voltar {
+    display: flex;
+  }
+  .Voltar > h2 {
+    padding: 0px 0px;
+    font-size: 40px;
+    color: #000;
+  }
+  .Voltar > button {
+    font-size: 25px;
+  }
+  button {
+   border: transparent;
+    padding: 1px 3px;
+    font-weight: bolder;
+  }
+  .prof {
+    font-weight: bolder;
+    padding-top: 10px;
+  }
+  .download-container {
+    text-align: center;
+  }
+  
+   /* Estilos para o botão */
+   .download-btn {
+    display: inline-block;
+    background-color: #ac6cda; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para dar destaque */
+    transition: all 0.3s ease-in-out; /* Transição suave para os efeitos */
+    margin-left: 700px;
+  }
+  
+    /* Efeito de hover (quando passa o mouse por cima) */
+    .download-btn:hover {
+      background-color: #8e0ee7; /* Cor de fundo no hover */
+      transform: translateY(-2px); /* Efeito de "subir" ao passar o mouse */
+  }
+  
+    /* Efeito de click (quando o botão é pressionado) */
+    .download-btn:active {
+      background-color: #8e0ee7; /* Cor de fundo no click */
+      transform: translateY(0); /* Normaliza o botão ao ser pressionado */
+  }
