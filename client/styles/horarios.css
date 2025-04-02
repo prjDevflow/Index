@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0px;
     margin: 0px;
@@ -130,3 +131,104 @@
       background-color: #8e0ee7; /* Cor de fundo no click */
       transform: translateY(0); /* Normaliza o botão ao ser pressionado */
   }
+=======
+.contHorarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 400px;
+  gap: 20px;
+}
+.contTable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contTable > section {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid;
+}
+
+.table th {
+  color: #fff;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 25px;
+  text-align: center;
+}
+/* .table td {
+  border: 1px solid black;
+  text-align: center;
+  text-wrap: pretty;
+} */
+/* Largura maior para a primeira coluna */
+.table th:nth-child(1), .table td:nth-child(1) {
+  width: 13%; /* Primeira coluna será maior */
+}
+
+/* Largura igual para as outras colunas */
+.table th:nth-child(n+2), .table td:nth-child(n+2) {
+  width: 15%; /* Colunas 2 a 6 terão largura igual */
+}
+
+table > tbody {
+  background-color: #fafafa;
+}
+
+.dias {
+  font-weight: bold;
+}
+
+.table td {
+  padding: 25px 25px;
+}
+.professores {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.prof {
+  font-weight: bolder;
+  padding-top: 10px;
+}
+.btnDiv{
+  width: 100%;
+  text-align: right;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: red; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 15px 30px; /* Espaçamento interno */
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para dar destaque */
+  transition: all 0.3s ease-in-out; /* Transição suave para os efeitos */
+}
+
+  /* Efeito de hover (quando passa o mouse por cima) */
+  .download-btn:hover {
+    background-color: #8e0ee7; /* Cor de fundo no hover */
+    transform: translateY(-2px); /* Efeito de "subir" ao passar o mouse */
+}
+
+  /* Efeito de click (quando o botão é pressionado) */
+  .download-btn:active {
+    background-color: #8e0ee7; /* Cor de fundo no click */
+    transform: translateY(0); /* Normaliza o botão ao ser pressionado */
+}
+>>>>>>> f2107de (feat: add todas as paginas do sistema)

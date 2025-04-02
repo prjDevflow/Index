@@ -8,8 +8,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arial";
 }
-
 .bcgPrimary {
   background-color: #e22427;
 }
@@ -26,6 +26,7 @@ header > img {
   height: 40px;
   
 }
+<<<<<<< HEAD
 
 body {
   display: flex;
@@ -36,10 +37,14 @@ body {
 }
 #mainContent {
   flex: 1;
+=======
+#mainContent {
+  /* height: 100%; */
+>>>>>>> f2107de (feat: add todas as paginas do sistema)
   background-color: #f1f1f1;
 }
 header {
-  width: 100vw;
+  width: 100%;
   background-color: #e22427;
   display: flex;
   align-items: center;
@@ -57,7 +62,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 85vh;
   gap: 50px;
 }
 .cardCurso {
