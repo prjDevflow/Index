@@ -125,13 +125,9 @@ footer {
     position: absolute;
     bottom: 0;
     left: 50%; /* Começa no meio */
-    width: 65vw; /* Ocupa metade da largura da tela */
+    width: 58vw; /* Ocupa metade da largura da tela */
     height: 5px; /* Espessura da borda */
     background-color: red;
     transform: translateX(-50%); /* Centraliza a borda */
     border-radius: 20px;
-}
-.cabecalho > p {
-
-  text-size-adjust: 20px;
 }
