@@ -112,3 +112,26 @@ footer {
 .btnHome > button:hover {
   color: #000;
 }
+.cabecalho{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  padding-bottom: 20px;
+}
+.cabecalho::after {
+  content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Começa no meio */
+    width: 65vw; /* Ocupa metade da largura da tela */
+    height: 5px; /* Espessura da borda */
+    background-color: red;
+    transform: translateX(-50%); /* Centraliza a borda */
+    border-radius: 20px;
+}
+.cabecalho > p {
+
+  text-size-adjust: 20px;
+}
