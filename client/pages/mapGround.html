@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../styles/maps.css" /> -->
+</head>
+
+<body>
+  <section class="andarContainer">
+    <div class="btnHome">
+      <button onclick="loadContentPages(event, 'pages/main.html')">
+        <i class="fa-solid fa-chevron-left fa-sm"></i>
+        Voltar
+      </button>
+    </div>
+    <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
+    <nav>
+      <button disabled onclick="loadContentPages(event, 'pages/mapOne.html')">
+        <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+      </button>
+
+      <h1>Térreo</h1>
+      <button onclick="loadContentPages(event, 'pages/mapOne.html')">
+        <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+      </button>
+    </nav>
+
+    <section class="map">
+      <img class="mapDesktop" src="/client/Imagens/img_mapTerreo.png" alt="mapa primeiro andar"></img>
+      <img class="mapMobile" src="/client/Imagens/img_mapTerreoMobile.png" alt="mapa primeiro andar"></img>
+
+      <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
+      <button class="sala sala01" onclick="openDialog('01 - Lab. de Química Ambiental')">
+        Lab. de Química Ambiental
+        <br> 01
+      </button>
+      <button class="sala sala02" onclick="openDialog('02 - Lab. de Desenho e Topografia')">
+        Lab. de Desenho e Topografia
+        <br> 02
+      </button>
+      <button class="sala sala03" onclick="openDialog('03 - Lab. de Microbiologia Ambiental')">
+        Lab. de Microbiologia Ambiental
+        <br> 03
+      </button>
+      <button class="sala sala04" onclick="openDialog('04 - Lab. de Análises Ambientais')">
+        Lab. de Análises Ambientais
+        <br> 04
+      </button>
+    </section>
+
+    <!-- CONPONENTE MODAL -->
+    <!-- RENDERIZA AS AULAS DA SALA DURANTE A SEMANA -->
+    <dialog id="salaDialog">
+      <h2 id="idSala"></h2> <!-- IDENTIFICADOR DA SALA -->
+      <select  > <!-- SELECT DO DIA DA SEMANA -->
+        <option selected value="0">Todos</option>
+        <option value="1">Segunda-feira</option>
+        <option value="2">Terça-feira</option>
+        <option value="3">Quarta-feira</option>
+        <option value="4">Quinta-feira</option>
+        <option value="5">Sexta-feira</option>
+      </select>
+
+      <button id="btnteste"  onclick="closeDialog()">×</button> <!-- BOTAO DE SAIDA -->
+    </dialog>
+
+  </section>
+
+  <script src="../scripts/dialog.js"></script> <!-- SCRIPT PARA MODAL -->
+</body>
+
+</html>

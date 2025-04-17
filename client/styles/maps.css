@@ -1,0 +1,142 @@
+.andarContainer {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25vw;
+  gap: 25px;
+}
+.andarContainer > p {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+nav > h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+nav > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.map {
+  width: 100%;
+  position: relative;
+}
+.map > img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px;
+}
+.mapMobile {
+  display: none;
+}
+.sala {
+  position: absolute;
+  /* background-color: greenyellow; */
+  background-color: transparent;
+  font-weight: 600;
+  text-wrap: pretty;
+  font-size: 0.95rem;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  line-height: 20px;
+}
+.map button:hover {
+  /* background-color: #eee; */
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+/* Altera a cor do backdrop */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7); /* Preto com 30% de opacidade */
+}
+
+/* Estilo do dialog */
+dialog {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+
+
+  /* Torna o dialog invisível por padrão */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  visibility: hidden;
+
+  width: 50%; /* Tamanho do dialog */
+  padding: 25px 40px; /* Padding interno */
+  background-color: white; /* Cor de fundo */
+  border: none;
+  border-radius: 6px; /* Bordas arredondadas */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+dialog[open] {
+  visibility: visible; /* Quando aberto, o dialog fica visível */
+}
+
+/*Estilo do SELECT */
+select {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid black; 
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+/*Estilo do BTN */
+#btnteste {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+#btnteste:hover {
+  color: gray;
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width: 450px) {
+  dialog {
+    width: 80%;
+  }
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width: 800px) {
+  .andarContainer {
+    padding: 3dvh 7vw;
+  }
+  nav {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .mapMobile {
+    display: block;
+  }
+  .mapDesktop {
+    display: none;
+  }
+}
