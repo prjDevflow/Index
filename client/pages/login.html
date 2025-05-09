@@ -15,14 +15,16 @@
       <form id="loginForm">
         <label for="usuario">Nome do usuário</label>
         <input type="text" id="usuario" placeholder="Insira seu usuário" required>
-  
+        <small id="erroUsuario" class="erro-msg"></small>
+
         <label for="senha">Senha:</label>
         <div class="password-container">
           <input type="password" id="senha" placeholder="Digite sua senha" required>
           <i class="fas fa-eye" id="toggleSenha"></i>
         </div>
+        <small id="erroSenha" class="erro-msg"></small>
   
-        <button type="submit" onclick="loadContentPages(event, 'pages/secretary.html')">ENVIAR</button>
+        <button onclick="initLoginPage()">ENVIAR</button>
         <!-- <button type="submit">ENVIAR</button> -->
       </form>
   

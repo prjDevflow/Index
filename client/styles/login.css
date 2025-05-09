@@ -94,6 +94,15 @@ a{
   display: flex;
   font-size: 15px;
 }
+
+.erro-msg {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+
 @media (max-width: 768px) {
   .login-container {
     width: 90%;

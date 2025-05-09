@@ -92,3 +92,49 @@ window.onload = function () {
   const lastPage = localStorage.getItem("lastPage") || "pages/main.html";
   loadContentPages(null, lastPage);
 };
+
+
+
+function initLoginPage() {
+  const form = document.getElementById("loginForm");
+  const toggleSenha = document.getElementById("toggleSenha");
+  const senhaInput = document.getElementById("senha");
+  const erroUsuario = document.getElementById("erroUsuario");
+  const erroSenha = document.getElementById("erroSenha");
+
+  if (!form) return; // previne erro se o form não existir ainda
+
+  toggleSenha.addEventListener("click", () => {
+    senhaInput.type = senhaInput.type === "password" ? "text" : "password";
+    toggleSenha.classList.toggle("fa-eye-slash");
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const usuario = document.getElementById("usuario").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+    let valid = true;
+
+    erroUsuario.textContent = "";
+    erroSenha.textContent = "";
+
+    if (!usuario) {
+      erroUsuario.textContent = "Por favor, insira seu e-mail.";
+      valid = false;
+    }
+
+    if (!senha) {
+      erroSenha.textContent = "Por favor, insira sua senha.";
+      valid = false;
+    }
+
+    if (valid) {
+      if (usuario === "pedro@gmail.com" && senha === "1234") {
+        loadContentPages(null, "pages/secretary.html");
+      } else {
+        erroSenha.textContent = "E-mail ou senha inválidos.";
+      }
+    }
+  });
+}
