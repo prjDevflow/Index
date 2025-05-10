@@ -222,13 +222,13 @@ table > tbody {
 
   /* Efeito de hover (quando passa o mouse por cima) */
   .download-btn:hover {
-    background-color: #8e0ee7; /* Cor de fundo no hover */
+    background-color: #ff3030; /* Cor de fundo no hover */
     transform: translateY(-2px); /* Efeito de "subir" ao passar o mouse */
 }
 
   /* Efeito de click (quando o botão é pressionado) */
   .download-btn:active {
-    background-color: #8e0ee7; /* Cor de fundo no click */
+    background-color: #ff3030; /* Cor de fundo no click */
     transform: translateY(0); /* Normaliza o botão ao ser pressionado */
 }
 >>>>>>> f2107de (feat: add todas as paginas do sistema)

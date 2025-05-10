@@ -5,88 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1GEO - Horário de Aulas</title>
-    <link rel="stylesheet" href="../styles/Geo_horario.css">
+       <!-- USAMOS PARA IMPORTAR O ARQUIVO CSS -->
+       <!-- <link rel="stylesheet" href="../styles/main.css" />
+       <link rel="stylesheet" href="../styles/curso.css" />
+       <link rel="stylesheet" href="../styles/maps.css" />
+       <link rel="stylesheet" href="../styles/horarios.css" /> -->
 </head>
 
 <body>
-    <section>
-        <div class="CorpoDSM">
-
-            <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/157/2022/11/curso02.png"
-                width="170px" height="170px" />
-
+    <section class="contHorarios">
+        <div class="cursoTitle">
+            <img class="imgCurso" src="/client/Imagens/imgGeo.png" />
             <h2>Geoprocessamento</h2>
-    </section>
-    <div>
-        <div class="risco2"></div>
+        </div>
+        <div class="cursoDivider bcgGeo" style="margin-top: -10px;"></div>
 
-    </div>
+        <div class="btnHome">
+            <button onclick="loadContentPages(event, 'pages/main.html')">
+                <i class="fa-solid fa-chevron-left fa-sm"></i>
+                Voltar
+            </button>
+        </div>
+        <h2>1GEO</h2>
 
-    <main>
-
-        <div class="container">
-            <div class="Voltar">
-                <button>Voltar</button>
-                <h2>1GEO</h2> 
-            </div>
-
-
+        <section class="contTable">
             <table class="table">
                 <thead>
-                    <tr>
+                    <tr class="bcgGeo">
                         <th>Horário</th>
-                        <th>18:45 às 19:35</th>
-                        <th>19:35 às 20:25</th>
-                        <th>20:25 às 21:25</th>
-                        <th>21:25 às 22:15</th>
-                        <th>22:15 às 23:05</th>
+                        <th>18:45 - 19:35</th>
+                        <th>19:35 - 20:25</th>
+                        <th>20:25 - 21:25</th>
+                        <th>21:25 - 22:15</th>
+                        <th>22:15 - 23:05</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="dias">Segunda</td>
-                        <td>Introdução a Ciência da Geoinformação</td>
-                        <td>Algoritmo e Lógica de Programação</td>
-                        <td>Algoritmo e Lógica de Programação</td>
-                        <td>Metodologia</td>
-                        <td>Metodologia</td>
+                        <td>Engenharia de Software I</td>
+                        <td>Engenharia de Software I</td>
+                        <td>Engenharia de Software I</td>
+                        <td>Engenharia de Software I</td>
+                        <td>Sistemas Operacionais e Redes</td>
+
                     </tr>
                     <tr>
                         <td class="dias">Terça</td>
-                        <td>Desenho Técnico</td>
-                        <td>Desenho Técnico</td>
-                        <td>Desenho Técnico</td>
-                        <td>Desenho Técnico</td>
-                        <td>Comunicação</td>
+                        <td>Modelagem de Banco de Dados</td>
+                        <td>Modelagem de Banco de Dados</td>
+                        <td>Modelagem de Banco de Dados</td>
+                        <td>Design Digital</td>
+                        <td>Design Digital</td>
                     </tr>
                     <tr>
                         <td class="dias">Quarta</td>
                         <td>Algoritmo e Lógica de Programação</td>
                         <td>Algoritmo e Lógica de Programação</td>
-                        <td>Inglês I</td>
-                        <td>Inglês I</td>
-                        <td>Comunicação</td>
+                        <td>Algoritmo e Lógica de Programação</td>
+                        <td>Algoritmo e Lógica de Programação</td>
+                        <td>x</td>
 
                     </tr>
                     <tr>
                         <td class="dias">Quinta</td>
-                        <td>Introdução a Ciência da Geoinformação</td>
-                        <td>Introdução a Ciência da Geoinformação</td>
-                        <td>Introdução a Ciência da Geoinformação</td>
-                        <td>Funcamentos da Física</td>                       
-                        <td>Funcamentos da Física</td> 
+                        <td>Sistemas Operacionais e Redes</td>
+                        <td>Sistemas Operacionais e Redes</td>
+                        <td>Sistemas Operacionais e Redes</td>
+                        <td>Design Digital</td>
+                        <td>Design Digital</td>
                     </tr>
                     <tr>
                         <td class="dias">Sexta</td>
-                        <td>Cálculo</td>                      
-                        <td>Cálculo</td>                      
-                        <td>Cálculo</td>                      
-                        <td>Cálculo</td>                      
-                        <td>X</td>                       
+                        <td>Desenvolvimento Web I</td>
+                        <td>Desenvolvimento Web I</td>
+                        <td>Desenvolvimento Web I</td>
+                        <td>Desenvolvimento Web I</td>
+                        <td>Modelagem de Banco de Dados</td>
                     </tr>
                 </tbody>
             </table>
 
+<<<<<<< HEAD
             <div class="prof">Professores</div>
             <div>Engenharia de Software I - Egydio</div>
             <div>Sistemas Operacionais e Redes - Egydio</div>
@@ -102,6 +102,27 @@
         </div>
         </div>
     </main>
+=======
+            <section>
+                <section class="professores">
+                    <h3>Professores</h3>
+                    <div>Engenharia de Software I - Egydio</div>
+                    <div>Sistemas Operacionais e Redes - Egydio</div>
+                    <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
+                    <div>Design Digital - Marcelo Sudo</div>
+                    <div>Algoritmo e Lógica a de Programação: Arley</div>
+                    <div>Desenvolvimento Web: Henrique Louro</div>
+                </section>
+                <div class="btnDiv">
+                    <a href="" class="download-btn" download>
+                        Baixar PDF
+                        <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </section>
+>>>>>>> 324a50e (Refactor: Atualiza page tabelas)
 </body>
 
 </html>
